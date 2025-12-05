@@ -3,6 +3,7 @@
 import { Phone, Mail, MapPin, ArrowRight, Menu, X } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -15,9 +16,14 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RP</span>
-              </div>
+              <Image
+                src="/logo.jpg"                 
+                alt="Rajdeep Polymers Logo"     
+                width={48}                      
+                height={48}
+                className="object-contain rounded-full"  
+                priority                        
+              />
               <div>
                 <h1 className="font-bold text-sm text-foreground">RAJDEEP POLYMERS</h1>
                 <p className="text-xs text-muted-foreground">Premium Plastic Moulding</p>

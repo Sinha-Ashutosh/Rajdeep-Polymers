@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "Rajdeep Polymers - Injection Moulding Solutions",
   description:
     "Professional injection moulding services with precision engineering and quality assurance. Contact us at +91 98230 37085",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -23,8 +22,8 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/logo.jpg",
+        type: "image/jpg",
       },
     ],
     apple: "/apple-icon.png",
